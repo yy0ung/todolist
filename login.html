@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Login / Sign Up Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href = "style1.css">
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" id="login">
+        <h1 class="form_title">Login</h1>
+        <div class="form_message form_errormessage"></div>
+        <div class="form_input-group">
+          <input type="text" class="form_input" autofocus placeholder="Username or E-mail">
+          <div class="form_error-message">Incorrect username or E-mail.</div>
+        </div>
+        <div class="form_input-group">
+          <input type="text" class="form_input" autofocus placeholder="Password">
+          <div class="form_error-message">Incorrect password.</div>
+        </div>
+        <button class="form_button" type="submit">Continue</button>
+        <p class="form_text">
+            <a href = "#" class="form_link">Forget your password?</a>
+        </p>
+        <p class="form_text">
+            <a href = "#" class="form_link">Don't have an account? Creat account!</a>
+        </p>
+      </form>
+
+      <form class="form_hidden" id="creatAccount">
+        <h1 class="form_title">Creat Account</h1>
+        <div class="form_message form_errormessage">Incorrect username/password combination.</div>
+        <div class="form_input-group">
+          <input type="text" class="form_input" autofocus placeholder="Username">
+          <div class="form_error-message">Incorrect username.</div>
+        </div>
+        <div class="form_input-group">
+          <input type="text" id="email" class="form_input" autofocus placeholder="E-mail Adress">
+          <div class="form_error-message">Incorrect E-mail Adress.</div>
+        </div>
+        <div class="form_input-group">
+          <input type="text" class="form_input" autofocus placeholder="Password">
+          <div class="form_error-message">Incorrect password.</div>
+        </div>
+        <button class="form_button" type="submit">Continue</button>
+        <p class="form_text">
+            <a href = "#" class="form_link">Already have an account? Login!</a>
+        </p>
+
+      </form>
+
+    </div>
+
+  </body>
+</html>
