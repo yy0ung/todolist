@@ -26,18 +26,18 @@ push.addEventListener('click', function(){
     };
   });
 
-  function nightDay(self){
-    var target = document.querySelector('body');
-    var group = document.querySelector('a');
-    if(self.value==='night'){
-      target.style.backgroundColor='#333030';
-      target.style.color='white';
-      group.style.color='powderblue';
-      self.value ='day';
-    }else{
-      target.style.backgroundColor='white';
-      target.style.color='black';
-      group.style.color='blue';
-      self.value ='night';
-    };
-  }
+  // function nightDay(self){
+  //   var target = document.querySelector('body');
+  //   var group = document.querySelector('a');
+  //   if(self.value==='night'){
+  //     target.style.backgroundColor='#333030';
+  //     target.style.color='white';
+  //     group.style.color='powderblue';
+  //     self.value ='day';
+  //   }else{
+  //     target.style.backgroundColor='white';
+  //     target.style.color='black';
+  //     group.style.color='blue';
+  //     self.value ='night';
+  //   };
+  // }

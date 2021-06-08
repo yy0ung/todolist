@@ -1,50 +1,56 @@
 <!doctype html>
 <html>
   <head>
-    <title>Login / Sign Up Form</title>
+
     <meta charset="utf-8">
+    <title>Login / Sign Up Form</title>
     <link rel="stylesheet" href = "style1.css">
+
   </head>
   <body>
     <div class="container">
       <form class="form" id="login">
         <h1 class="form_title">Login</h1>
-        <div class="form_message form_errormessage"></div>
+        <div id="error1" class="form_message form_errormessage"></div>
         <div class="form_input-group">
-          <input type="text" class="form_input" autofocus placeholder="Username or E-mail">
-          <div class="form_error-message">Incorrect username or E-mail.</div>
+          <input type="text" id= "input1" class="form_input" autofocus placeholder="Username or E-mail">
+          <div class="form_error-message"></div>
         </div>
         <div class="form_input-group">
-          <input type="text" class="form_input" autofocus placeholder="Password">
-          <div class="form_error-message">Incorrect password.</div>
+          <input type="text" id="input2" class="form_input" autofocus placeholder="Password">
+          <div class="form_error-message"></div>
         </div>
-        <button class="form_button" type="submit">Continue</button>
+        <button class="form_button" id="golist" type="submit">Continue</button>
         <p class="form_text">
             <a href = "#" class="form_link">Forget your password?</a>
         </p>
         <p class="form_text">
-            <a href = "#" class="form_link">Don't have an account? Creat account!</a>
+            <a href = "#" id="accountLink" class="form_link">Don't have an account? Create account!</a>
         </p>
       </form>
 
       <form class="form_hidden" id="creatAccount">
         <h1 class="form_title">Creat Account</h1>
-        <div class="form_message form_errormessage">Incorrect username/password combination.</div>
+        <div  id = "error2" class="form_message form_errormessage"></div>
         <div class="form_input-group">
-          <input type="text" class="form_input" autofocus placeholder="Username">
-          <div class="form_error-message">Incorrect username.</div>
+          <input type="text" id="input3" class="form_input" autofocus placeholder="Username">
+          <div class="form_error-message"></div>
         </div>
         <div class="form_input-group">
-          <input type="text" id="email" class="form_input" autofocus placeholder="E-mail Adress">
-          <div class="form_error-message">Incorrect E-mail Adress.</div>
+          <input type="text" id="input4" class="form_input" autofocus placeholder="E-mail Adress">
+          <div id="error3" class="form_error-message"></div>
         </div>
         <div class="form_input-group">
-          <input type="text" class="form_input" autofocus placeholder="Password">
-          <div class="form_error-message">Incorrect password.</div>
+          <input type="text" id="input5" class="form_input" autofocus placeholder="Password">
+          <div class="form_error-message"></div>
         </div>
-        <button class="form_button" type="submit">Continue</button>
+        <div class="form_input-group">
+          <input type="text" id="input6" class="form_input" autofocus placeholder="Confirm">
+          <div class="form_error-message"></div>
+        </div>
+        <button id ="go" class="form_button" type="submit">Continue</button>
         <p class="form_text">
-            <a href = "#" class="form_link">Already have an account? Login!</a>
+            <a href = "#" id="loginLink" class="form_link">Already have an account? Login!</a>
         </p>
 
       </form>
@@ -52,4 +58,5 @@
     </div>
 
   </body>
+  <script src="login.js"></script>
 </html>
